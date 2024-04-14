@@ -841,6 +841,20 @@ template {
 @font-face {
   font-family: "Gilroy";
   font-display: swap;
+  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Extrabold.woff2") format("woff2"), url("../fonts/Gilroy-Extrabold.woff") format("woff"), url("../fonts/Gilroy-Extrabold.ttf") format("ttf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-display: swap;
   src: url("../fonts/Gilroy-Black.woff2") format("woff2"), url("../fonts/Gilroy-Black.woff") format("woff"), url("../fonts/Gilroy-Black.ttf") format("ttf");
   font-weight: 900;
 }
@@ -855,15 +869,15 @@ template {
 @font-face {
   font-family: "Gilroy";
   font-display: swap;
-  src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.ttf") format("ttf");
-  font-weight: 500;
+  src: url("../fonts/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.ttf") format("ttf");
+  font-weight: 300;
 }
 
 @font-face {
   font-family: "Gilroy";
   font-display: swap;
-  src: url("../fonts/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.ttf") format("ttf");
-  font-weight: 300;
+  src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.ttf") format("ttf");
+  font-weight: 500;
 }
 
 @font-face {
@@ -883,29 +897,15 @@ template {
 @font-face {
   font-family: "Gilroy";
   font-display: swap;
-  src: url("../fonts/Gilroy-UltraLight.woff2") format("woff2"), url("../fonts/Gilroy-UltraLight.woff") format("woff"), url("../fonts/Gilroy-UltraLight.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-display: swap;
-  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("ttf");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-display: swap;
-  src: url("../fonts/Gilroy-Extrabold.woff2") format("woff2"), url("../fonts/Gilroy-Extrabold.woff") format("woff"), url("../fonts/Gilroy-Extrabold.ttf") format("ttf");
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-display: swap;
   src: url("../fonts/Gilroy-Thin.woff2") format("woff2"), url("../fonts/Gilroy-Thin.woff") format("woff"), url("../fonts/Gilroy-Thin.ttf") format("ttf");
   font-weight: 100;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-display: swap;
+  src: url("../fonts/Gilroy-UltraLight.woff2") format("woff2"), url("../fonts/Gilroy-UltraLight.woff") format("woff"), url("../fonts/Gilroy-UltraLight.ttf") format("ttf");
+  font-weight: 400;
 }
 
 body {
@@ -2730,31 +2730,14 @@ textarea {
   max-height: 100%;
   display: inline-block;
   vertical-align: middle;
-  max-width: 43.75vw;
+  max-width: 31.40625vw;
   text-align: left;
   width: 100%;
   background: #F6F7F9;
   border-radius: 0.8333333333vw;
   position: relative;
+  padding: 2.5vw;
   box-shadow: 0px 9px 19px 0px rgba(0, 0, 0, 0.1), 0px 35px 35px 0px rgba(0, 0, 0, 0.09), 0px 80px 48px 0px rgba(0, 0, 0, 0.05), 0px 141px 57px 0px rgba(0, 0, 0, 0.01), 0px 221px 62px 0px rgba(0, 0, 0, 0);
-}
-
-.modal.modal_check .modal__title {
-  text-align: center;
-}
-
-.modal.modal_check .modal__in {
-  max-width: 55.8854166667vw;
-  overflow: auto;
-}
-
-.modal.modal_check .modal__l-side {
-  flex: 0 0 25.2083333333vw;
-  margin-top: 0;
-}
-
-.modal.modal_sends .modal__l-side {
-  flex: 0 0 9.9479166667vw;
 }
 
 .modal__closer {
@@ -2767,26 +2750,6 @@ textarea {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M12 4L4 12M4 4L12 12' stroke='%23666666' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 50%/100% no-repeat;
 }
 
-.modal__items {
-  display: flex;
-}
-
-.modal__l-side {
-  font-size: 0;
-  flex: 0 0 16.0416666667vw;
-}
-
-.modal__l-side img {
-  width: 100%;
-  height: 100%;
-}
-
-.modal__r-side {
-  padding: 2.5vw;
-  width: 100%;
-  padding-left: 1.40625vw;
-}
-
 .modal__title {
   color: var(--Black, #313132);
   font-family: "Gilroy", sans-serif;
@@ -2794,9 +2757,8 @@ textarea {
   font-style: normal;
   font-weight: 500;
   line-height: 110%;
-  text-transform: uppercase;
+  text-align: center;
   margin-bottom: 0.5208333333vw;
-  padding-right: 2.0833333333vw;
 }
 
 .modal__text {
@@ -2806,6 +2768,7 @@ textarea {
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
+  text-align: center;
   max-width: 22.8125vw;
   width: 100%;
 }
@@ -2900,7 +2863,7 @@ textarea {
 .modal__form--custom-checkbox > input:checked + span:before {
   border-color: #1229fe;
   background-color: #1229fe;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
 }
 
 .modal__form input[type=tel],
@@ -2921,14 +2884,13 @@ textarea {
 }
 
 .modal__form input[type=submit] {
-  margin-top: 0.8333333333vw;
-  border-radius: 4px;
-  background: var(--Red, #0C091D);
-  border: 1px solid #0C091D;
+  border-radius: 100px;
+  background: var(--Red, #1229fe);
+  border: 1px solid #1229fe;
   color: #fff;
   text-align: center;
   font-family: "Gilroy", sans-serif;
-  font-size: 0.7291666667vw;
+  font-size: 0.8333333333vw;
   font-style: normal;
   font-weight: 500;
   line-height: 100%;
@@ -2947,14 +2909,44 @@ textarea {
 
 .modal__form input[type=submit]:hover {
   background: var(--Green-2, #1229fe);
-  color: var(--Black, #313132);
+  color: var(--Black, #fff);
   border-color: var(--Red, #1229fe);
 }
 
 .modal__form input[type=submit]:active {
   background: #0000b8;
   border-color: #0000b8;
-  color: var(--Black, #313132);
+  color: var(--Black, #fff);
+}
+
+.modal__form--submit {
+  position: relative;
+  padding-right: 3.6979166667vw;
+  margin-top: 0.8333333333vw;
+}
+
+.modal__form--submit label {
+  content: "";
+  position: absolute;
+  right: 0;
+  border-radius: 50%;
+  top: 50%;
+  width: 2.9166666667vw;
+  height: 2.9166666667vw;
+  margin-top: -1.4583333333vw;
+  background: var(--Green-2, #1229fe) url("data:image/svg+xml,%3Csvg width='32' height='33' viewBox='0 0 32 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.33203 23.1667L22.6654 9.83337M22.6654 9.83337H9.33203M22.6654 9.83337V23.1667' stroke='%23fff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E") 50% no-repeat;
+  background-size: 1.71875vw;
+  pointer-events: none;
+}
+
+.modal__form--submit input:disabled + label {
+  background: var(--Green-2, #c4c4c4) url("data:image/svg+xml,%3Csvg width='32' height='33' viewBox='0 0 32 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.33203 23.1667L22.6654 9.83337M22.6654 9.83337H9.33203M22.6654 9.83337V23.1667' stroke='%23000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E") 50% no-repeat;
+  background-size: 1.71875vw;
+}
+
+.modal__form--submit:active label {
+  background: var(--Green-2, #0000b8) url("data:image/svg+xml,%3Csvg width='32' height='33' viewBox='0 0 32 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.33203 23.1667L22.6654 9.83337M22.6654 9.83337H9.33203M22.6654 9.83337V23.1667' stroke='%23fff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E") 50% no-repeat;
+  background-size: 1.71875vw;
 }
 
 @media all and (min-width: 1023px) {
@@ -3620,13 +3612,10 @@ textarea {
   }
 
   .modal__in {
-    max-width: 840px;
+    max-width: 603px;
     border-radius: 16px;
     overflow: auto;
-  }
-
-  .modal.modal_check .modal__in {
-    max-width: 1073px;
+    padding: 32px 16px;
   }
 
   .modal__closer {
@@ -3636,13 +3625,7 @@ textarea {
     height: 24px;
   }
 
-  .modal__r-side {
-    padding: 32px 16px;
-    padding-top: 64px;
-  }
-
   .modal__title {
-    padding-right: 0;
     text-align: center;
     font-size: 24px;
     margin-bottom: 12px;
@@ -3705,10 +3688,28 @@ textarea {
   }
 
   .modal__form input[type=submit] {
-    padding: 24px;
+    padding: 19px;
     font-size: 16px;
-    border-radius: 12px;
+  }
+
+  .modal__form--submit {
+    padding-right: 71px;
     margin-top: 16px;
+  }
+
+  .modal__form--submit label {
+    width: 56px;
+    height: 56px;
+    margin-top: -28px;
+    background-size: 33px;
+  }
+
+  .modal__form--submit input:disabled + label {
+    background-size: 33px;
+  }
+
+  .modal__form--submit:active label {
+    background-size: 33px;
   }
 }
 
