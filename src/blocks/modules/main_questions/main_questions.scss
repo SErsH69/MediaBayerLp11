@@ -1,0 +1,122 @@
+.main_questions {
+    padding-top: vw(41);
+    padding-bottom: vw(82);
+    background-image: url('../img/flower.png');
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: vw(529);
+    @media all and (max-width: 1023px) {
+        padding-top: 28px;
+        padding-bottom: 56px;
+        background-image: unset !important;
+    }
+    &__title {
+        color: var(--Darck, #0c091d);
+        font-family: 'Gilroy', sans-serif;
+        font-weight: 700;
+        font-size: vw(40);
+        line-height: 120%;
+        margin-bottom: vw(32);
+        @media all and (max-width: 1023px) {
+            margin-bottom: 24px;
+            font-size: 32px;
+        }
+    }
+    &__block {
+        cursor: pointer;
+        border-radius: 12px;
+        overflow: hidden;
+        background: var(--light-grey, #fff);
+        &:not(:last-child) {
+            margin-bottom: vw(16);
+            @media all and (max-width: 1023px) {
+                margin-bottom: 16px;
+            }
+        }
+        @media all and (max-width: 1023px) {
+            margin-bottom: 16px;
+        }
+        &.isActive {
+            box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.05);
+            .main_questions__answer {
+                display: block;
+            }
+            .main_questions__question {
+                color: #1229fe;
+                &:before {
+                    transform: rotate(180deg);
+                    background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.6004 7.45831L11.1671 12.8916C10.5254 13.5333 9.47539 13.5333 8.83372 12.8916L3.40039 7.45831' stroke='%231229fe' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") 50% / 100% no-repeat;
+                }
+            }
+        }
+    }
+    &__question {
+        color: var(--Black, #313132);
+        font-family: 'Gilroy', sans-serif;
+        font-size: vw(18);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        position: relative;
+        padding: vw(24);
+        padding-right: vw(50);
+        @media all and (max-width: 1023px) {
+            font-size: 16px;
+            padding: 16px;
+            padding-right: 45px;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            right: vw(24);
+            top: 50%;
+            width: vw(20);
+            height: vw(20);
+            margin-top: vw(-10);
+            background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.6004 7.45831L11.1671 12.8916C10.5254 13.5333 9.47539 13.5333 8.83372 12.8916L3.40039 7.45831' stroke='%23313132' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") 50% / 100% no-repeat;
+            @media all and (max-width: 1023px) {
+                width: 20px;
+                height: 20px;
+                margin-top: -10px;
+                right: 24px;
+            }
+        }
+    }
+    &__answer {
+        color: var(--Black, #313132);
+        font-family: 'Gilroy', sans-serif, cursive;
+        font-size: vw(16);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        padding: vw(24) 0;
+        margin-left: vw(24);
+        margin-right: vw(24);
+        display: none;
+        border-top: 1px solid #EFEFEF;
+        * {
+            font-family: 'Gilroy', sans-serif, cursive;
+            font-size: vw(16);
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+            @media all and (max-width: 1023px) {
+                font-size: 16px;
+            }
+        }
+        @media all and (max-width: 1023px) {
+            padding: 24px 0;
+            margin-left: 24px;
+            margin-right: 24px;
+            font-size: 16px;
+        }
+        p {
+            &:first-child {
+                margin-top: 0;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
